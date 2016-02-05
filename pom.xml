@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ru.artmordent.app</groupId>
+    <groupId>ru.artmordent.baseapp</groupId>
     <artifactId>app-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${project.version}</version>
     <name>BaseApp template</name>
     <url>http://www.artmordent.ru</url>
 
@@ -13,16 +13,15 @@
     </build>
 
     <properties>
-        <maven.test.skip>true</maven.test.skip>
-
+        <project.version>0.0.1-SNAPSHOT</project.version>
         <spring.framework.version>4.2.4.RELEASE</spring.framework.version>
         <com.sun.faces.version>2.2.0-m07</com.sun.faces.version>
         <lombok.version>1.16.6</lombok.version>
         <common.lib.com.google.guice.version>4.0</common.lib.com.google.guice.version>
-        <jboss.resteasy.version>3.0.10.Final</jboss.resteasy.version>
-
-        <stub.java.version>1.7</stub.java.version>
+        <jboss.resteasy.version>3.0.14.Final</jboss.resteasy.version>
+        <stub.java.version>1.8</stub.java.version>
         <stub.javaee.api.version>7.0</stub.javaee.api.version>
+        <javax.servlet.version>3.1.0</javax.servlet.version>
     </properties>
 
 
@@ -36,11 +35,11 @@
 
     <repositories>
         <repository>
-            <id>central</id>
+            <id>maven.org</id>
             <url>http://repo1.maven.org/maven2/</url>
         </repository>
         <repository>
-            <id>123</id>
+            <id>maven.apache.org</id>
             <url>http://repo.maven.apache.org/maven2</url>
         </repository>
         <repository>
@@ -91,8 +90,17 @@
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
-            <version>3.0.14.Final</version>
+            <version>${jboss.resteasy.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>${jboss.resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.version}</version>
+        </dependency>
     </dependencies>
 </project>

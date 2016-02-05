@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
     <context-root>/baseapp</context-root>
-    <!--<security-domain flushOnSessionInvalidation="true">baseapp</security-domain>-->
 </jboss-web>

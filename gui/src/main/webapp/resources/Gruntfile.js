@@ -9,8 +9,7 @@ module.exports = function (grunt) {
                     optimization: 2
                 },
                 files: {
-                    "css/template/landingPage.css": "less/landingPage.less",
-                    "css/template/landingPageHeader.css": "less/landingPageHeader.less"
+                    "css/template.css": "less/template.less"
                 }
             }
         },
