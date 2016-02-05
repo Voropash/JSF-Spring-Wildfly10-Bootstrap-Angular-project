@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+@import
+	url("#{facesContext.externalContext.requestContextPath}/resources/css/bigYellowButton.css")
+	;
+/* Долой границы в p:panelGrid! */
+.ui-panelgrid.noborder td,.ui-panelgrid.noborder tr {
+	border: none !important;
+}
+
+.gridColumn {
+	padding-left: 22px !important;
+	padding-top: 22px !important;
+	padding-bottom: 22px !important;
+	padding-right: 22px !important;
+}
+
+.textBlock {
+	padding-bottom: 22px !important;
+}
+
+table.padding22 {
+	padding-left: 22px !important;
+	padding-top: 22px !important;
+	padding-bottom: 22px !important;
+	padding-right: 22px !important;
+}
+/* Никаких отступов в таблицах! */
+table.nopadding td,table.nopadding tr {
+	padding: 0;
+}
+
+/* Убрать отступ в p:panel. */
+.ui-panel .ui-panel-content {
+	padding: 0 !important;
+}
+
+.noborder {
+	border: none !important;
+}
+
+.ui-widget-content {
+	background-color: inherit;
+	background: inherit;
+}
+
+div.fail-image {
+	background-image:
+		url("#{facesContext.externalContext.requestContextPath}/resources/images/fail-page-image.png");
+	background-color: inherit;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 253px;
+	height: 253px;
+	border: none !important;
+	padding: 0 !important;
+}
+
+div.error-500-image {
+	background-image:
+		url("#{facesContext.externalContext.requestContextPath}/resources/images/error-500-image.png");
+	background-color: inherit;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 746px;
+	height: 400px;
+	border: none !important;
+	padding: 0 !important;
+}
+
+div.error-404-image {
+	background-image:
+		url("#{facesContext.externalContext.requestContextPath}/resources/images/error-404-image.png");
+	background-color: inherit;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 323px;
+	height: 513px;
+	border: none !important;
+	padding: 0 !important;
+}
+
+.ui-outputlabel.red {
+	color: red;
+}
+
+.div.padder {
+	padding-top: 10px;
+	padding-bottom: 22px;
+	padding-left: 10px;
+}
+
+.ui-outputlabel.general {
+	font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+	color: #787878;
+	font: Arial;
+	size: 13 px;
+	line-height: 19 px;
+	style: Regular;
+	font-size: 13px;
+	font-weight: normal;
+	vertical-align: baseline;
+	font-size: 13px;
+}
+
+.ui-panelgrid td.error-col1 {
+	vertical-align: top;
+}
+
+.ui-panelgrid td.error-col2 {
+	padding-left: 370px;
+}
+
+.ui-outputlabel.margining {
+	display: block !important;
+}
+
+div.padder {
+	padding: 0 0 0 3px;
+}

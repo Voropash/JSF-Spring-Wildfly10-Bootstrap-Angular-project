@@ -1,0 +1,23 @@
+# For project files
+.project
+*.iml
+.idea/
+.settings/
+.classpath
+
+# For windows temp files
+~*
+*~
+
+# For gui temp files
+/gui/cloud-gui/src/main/webapp/resources/node_modules
+/gui/cloud-gui/src/main/webapp/resources/package.json
+/gui/cloud-gui/build/
+.tern-project
+
+# For build folders and files
+dependency-reduced-pom.xml
+target/
+/build/
+/classes/
+/out/

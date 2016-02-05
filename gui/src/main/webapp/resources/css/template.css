@@ -1,0 +1,198 @@
+@CHARSET "UTF-8";
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #787878;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+
+.ui-panel#full-page {
+    position: absolute !important;
+    background: white;
+    min-height: 100%;
+    width: 100%;
+    background-color: #F1EFEB;
+    min-width: 1140px;
+}
+
+div#header-line {
+    width: 100%;
+    background-color: #282828;
+}
+
+div#header-line-content {
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    background-color: #282828;
+}
+
+div#header-navigate {
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 100px;
+    border-bottom: 1px solid #C8C8C8;
+    -moz-box-shadow: 0 4px 10px -5px rgba(40, 40, 40, .3);
+    -webkit-box-shadow: 0 4px 10px -5px rgba(40, 40, 40, .3);
+    box-shadow: 0 4px 10px -5px rgba(40, 40, 40, .3);
+    margin-bottom: 10px;
+}
+
+div#header-navigate-content {
+    position: relative;
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
+    /*width: 1000px;*/
+    background-color: #FFFFFF;
+    min-height: 100px;
+}
+
+div#body {
+    position: relative;
+    width: 100%;
+    background-color: #F1EFEB;
+    min-height: 200px;
+    margin-bottom: 400px;
+}
+
+div#body-content {
+    position: relative;
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
+    width: 1000px;
+    background-color: #F1EFEB;
+    min-height: 200px;
+    /*spike*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    min-height: 50px;
+    height: 370px;
+}
+
+div#footer-content {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.ui-panel.onebody-rootpanel {
+    margin: 21px;
+    padding: 0;
+}
+
+.ui-panel.onebody-rootpanel div.ui-panel-content {
+    padding: 0;
+}
+
+#left-root.ui-widget-content {
+    min-height: 400px;
+}
+
+.ui-panelgrid.logingrid td {
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+.ui-dialog.dialog {
+    border-color: #FFB612;
+    border-radius: 4px;
+    border-width: 3px;
+    box-shadow: 0 0 52px #FFB612;
+    z-index: 50;
+}
+
+.ui-dialog.dialog.block {
+    width: auto !important;
+}
+
+.ui-dialog.dialog.start-processing {
+    width: 728px !important;
+}
+
+.ui-dialog.dialog div.ui-dialog-titlebar {
+    background: white;
+    text-align: center;
+    padding: 44px 0 22px 0;
+}
+
+.ui-dialog.dialog div.ui-dialog-titlebar span.ui-dialog-title {
+    font-family: officinaserifc;
+    font-weight: bold;
+    font-size: 41px;
+    float: none;
+    margin: 0;
+    font-size: 41px;
+}
+
+.ui-dialog.dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-icon {
+    margin: -32px 12px 0 0;
+}
+
+.ui-dialog.dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-close:hover {
+    box-shadow: inherit;
+    background: inherit;
+    border: inherit;
+    padding: 1px;
+}
+
+.ui-dialog.dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-icon span.ui-icon {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("#{facesContext.externalContext.requestContextPath}/resources/images/icons/icons.png");
+    background-origin: padding-box;
+    background-position: -3px -166px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+.ui-dialog.dialog div.ui-dialog-content {
+    padding: 1px 44px 44px 44px;
+    background: white;
+    overflow: hidden;
+}
+
+.ui-widget-content {
+    border-color: #ccc ;
+}
+
+.align_center
+{
+    position: relative;
+    width: 100%;
+}
+.align_center:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.align_center_to_left
+{
+    position: relative;
+    right: 50%;
+    float: right;
+}
+.align_center_to_right
+{
+    position: relative;
+    z-index: 1;
+    right: -50%;
+}

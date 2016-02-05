@@ -1,0 +1,8 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <module name="org.apache.httpcomponents"/>
+            <module name="com.fasterxml.jackson.core.jackson-databind"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

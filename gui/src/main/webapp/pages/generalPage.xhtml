@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="/templates/mainTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="title">Главная страница</ui:define>
+    <ui:define name="body">
+        <h3>Заголовок</h3>
+        <h:form>
+            <h:inputText value="#{registrationUserBean.firstname}"/>
+            <h:inputText value="#{registrationUserBean.lastname}"/>
+            <h:inputText value="#{registrationUserBean.email}"/>
+            <h:commandButton id="button" value="Register" action="#{registrationUserBean.register}"/>
+
+            <h:messages/>
+            <p:link outcome="error" value="Ссылка на страницу ошибки"/>
+        </h:form>
+    </ui:define>
+</ui:composition>

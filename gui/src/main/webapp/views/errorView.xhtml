@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui">
+    <h:outputStylesheet library="css" name="fail.css"/>
+
+    <p:panelGrid id="mainPanel" columns="1" styleClass="noborder">
+        <p:outputLabel value="Ошибка !!!" styleClass="margining h1 bold"/>
+        <p:outputLabel
+                value="Неправильно набран адрес или такой страницы на сайте больше не существует. Или же ошибка у нас на портале"
+                styleClass="h3"/>
+    </p:panelGrid>
+    <p:panelGrid columns="2" columnClasses="error-col1, error-col2">
+        <p:panel styleClass="nopadding noborder">
+            <p:outputLabel value="Вернитесь на "/>
+            <h:link value="главную" outcome="generalPage"/>
+        </p:panel>
+    </p:panelGrid>
+</ui:composition>
